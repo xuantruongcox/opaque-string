@@ -4,7 +4,7 @@
 
 1. Navigate to each following directories:
    ```
-   ./Topic-1/
+   Topic-1
    ```
 
 2. Locate the file named `quiz-collection.docx`
