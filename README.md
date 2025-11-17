@@ -1,13 +1,18 @@
 # opaque-string
 
-## Instructions for Opening quiz-collection.docx
+## Instructions for Opening quiz-collection.docx or quiz-collection.mdx (Since Topic-2)
 
 1. Navigate to each following directories:
    ```
    Topic-1
+   Topic-2
    ```
 
-2. Locate the file named `quiz-collection.docx`
+2. Locate the file named 
+```js
+quiz-collection.docx //Topic 1
+quiz-collection.mdx //Topic 2
+```
 
 3. To open the file:
    - Double-click the file if Microsoft Word is your default .docx viewer
