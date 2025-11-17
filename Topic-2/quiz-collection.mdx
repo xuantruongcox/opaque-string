@@ -1,0 +1,201 @@
+# Topic 2:  Editing and processing digital audio, part 1
+### **Question 1**
+ **Which of the following tools will be used to move an audio clip to another location inside an audio track?**
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3Ab18deb7e-a0b8-43b9-a5ff-9bd554b383f5%3Aimage.png?table=block&id=1cc1a2fa-43a8-802c-a131-d765c3e83cf2&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=380&userId=&cache=v2)
+- A
+- B
+- C
+- **D**
+### **Question 2**
+
+**What can you control with this slider?**
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3A1f805457-4d07-4482-adcc-499cee132245%3Aimage.png?table=block&id=1cc1a2fa-43a8-80d7-829b-f1c4f5094084&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=490&userId=&cache=v2)
+- The gain for an individual clip.
+- The panning of the track.
+- **The gain for an individual track.**
+### **Question 3**
+
+Which of the following tools will be used to select segments of a track to be copied, moved or cut?
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3Abab1edd4-d0a1-4c10-bb33-4db23506227a%3Aimage.png?table=block&id=1cc1a2fa-43a8-8009-bb74-c085bb5f2901&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=380&userId=&cache=v2)
+- **A**
+- B
+- C
+- D
+### **Question 4**
+
+**What is the function of this tool?**
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3A43bf0c79-4e16-41d9-ac7e-1c28db0e630d%3Aimage.png?table=block&id=1cc1a2fa-43a8-804f-8490-d83fab04dc00&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=80&userId=&cache=v2)
+
+- **It zooms until all of the selected waveform fits inside the window.**
+- This tool doubles the current zoom level.
+- It zooms until all the waveform fits inside the window.
+### **Question 5**
+
+What is the function of the Envelope tool?
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3A0d90140a-322c-43c6-9762-3c3488dd37d3%3Aimage.png?table=block&id=1cc1a2fa-43a8-802f-8a02-d7fdd32e3d7b&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=80&userId=&cache=v2)
+- The Envelope tool allows us to change the pitch of clip.
+- The Envelope tool allows us to make a signal stronger on left or right speaker/earphone.
+- **The Envelope tool allows us to configure clips' volume changes smoothly over time.**
+### **Question 6**
+
+**What is a spectrogram?**
+
+- **A spectrogram is a visual representation of the spectrum of frequencies of a signal as it varies with time.**
+- A spectrogram shows the frequency content of a signal for a specific time period.
+- The spectrogram of a signal allows us to represent the waveform of the signal.
+### **Question 7**
+
+**What is audio normalisation?**
+
+- To normalise audio consist of expressing the sample values in decibels.
+- **To normalise audio is to change its overall volume by a fixed amount to reach a target level.**
+- Audio normalisation is the process of removing noise from a signal.
+### **Question 8**
+
+**The Fade in and Fade out options are found in which menu?**
+
+- Edit
+- Tracks
+- Tools
+- **Effect**
+### **Question 9**
+**Which of the following audio effects can remove a click at the end of a sound?**
+
+- **Fade out**
+- Fade in
+- Normalise
+### **Question 10**
+
+**Which p5.sound class would allow one to configure a filter that removes frequencies below a given threshold without modifying the rest of frequencies?**
+
+- p5.LowPass
+- p5.HighPass
+- **p5.BandPass**
+### **Question 11**
+
+**How are the objects soundFile, reverb and audio output connected according this code?**
+```js
+soundFile = loadSound('mySound.wav');
+reverb = new p5.Reverb();
+reverb.process(soundFile, 3, 2);
+```
+- Connection A
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3A6bd9b50c-be55-4306-ba1a-62fde39e5a7a%3Aimage.png?table=block&id=1cc1a2fa-43a8-80bf-948b-e063cacbe03b&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=1360&userId=&cache=v2)
+
+- Connection B
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3Ac4720628-5cc2-477d-9f77-b3c6c45d3151%3Aimage.png?table=block&id=1cc1a2fa-43a8-80ad-9829-d432d0fb8545&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=1360&userId=&cache=v2)
+
+- **Connection C (Correct answer)**
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3A23660849-1f65-4f32-ba4f-8dbc3817c535%3Aimage.png?table=block&id=1cc1a2fa-43a8-8063-8fe2-fd0b18b45108&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=1340&userId=&cache=v2)
+### **Question 12**
+
+**How are the objects soundFile, reverb and audio output connected according this code?**
+```js
+soundFile = loadSound('mySound.wav');
+reverb = new p5.Reverb();
+soundFile.disconnect();
+reverb.process(soundFile, 3, 2);
+```
+
+- Connection A
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3A570c1551-ea37-48d1-b26a-f1e788d8731f%3Aimage.png?table=block&id=1cc1a2fa-43a8-80e5-9232-e1fd41a0e72d&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=1360&userId=&cache=v2)
+
+- **Connection B (Correct answer)**
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3Ac4720628-5cc2-477d-9f77-b3c6c45d3151%3Aimage.png?table=block&id=1cc1a2fa-43a8-80ad-9829-d432d0fb8545&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=1360&userId=&cache=v2)
+
+- **Connection C**
+
+![image.png](https://opaque-string-5b8.notion.site/image/attachment%3A23660849-1f65-4f32-ba4f-8dbc3817c535%3Aimage.png?table=block&id=1cc1a2fa-43a8-8063-8fe2-fd0b18b45108&spaceId=6923be1d-2bde-46f1-bf1a-c0a517d46d90&width=1340&userId=&cache=v2)
+
+### **Question 13**
+```python
+Let's suppose that we have the signal
+
+sig = [0.5, 0.25, 0.5]
+
+and the impulse response
+
+sys = [0.0, 0.75, 0.50].
+
+What would the result of convolving the signal 'sig' with the impulse response 'sys'? (Note: try to solve it 'by hand'!).
+```
+- **[0.0, 0.375, 0.4375, 0.5, 0.25]**
+- [0.0,  0.25, 0.375, 0.375, 0.25]
+- [0.25,  0.5, 0.375, 0.4375, 0.25]
+- [0.0,  0.5, 0.375, 0.4375, 0.25]
+
+### **Question 14**
+```python
+In the previous video, we have seen how to implement a convolve function.
+
+Create a Jupyter Notebook and run that convolve function using the following signal and impulse response:
+
+sig = [1.0, 0.75, 0.5, 0.75, 1.0]
+sys = [0.0, 1.0, 0.75, 0.5, 0.25]
+
+What would be the result of convolving the signal 'sig' with the impulse response 'sys'?
+```
+- [0.25, 0.75, 1.5, 1.75, 1.75, 2.0, 1.25, 0.6, 0.0]
+- [0.0, 0.5, 1.0, 1.5625, 1.75, 2.0, 1.25, 0.6875, 0.25]
+- [0.0, 0.75, 1.5, 1.75, 1.75, 2.0, 1.25, 0.6, 0.25]
+- **[0.0, 1.0, 1.5, 1.5625, 1.75, 2.0, 1.25, 0.6875, 0.25]**
+
+---
+
+## **Reviewing Exercises**
+### **Question 1**
+```
+How many clicks did you find in `Try again` and `Go, go, go!` and how di you fix them?
+```
+**Answer**: I found 1 clicks in `Try again` and 2 clicks in `Go, go, go!`. I fixed them by zooming in to the clicks and using the selection tool to highlight the clicks and then applying the 'Silence Audio' effect to remove them.
+### **Question 2**
+```
+What approach did you use when editing in parts 2 and 3 to avoid generating clicks?
+```
+
+**Answer**: I made sure to use fade-ins and fade-outs at the beginning and end of each clip to ensure smooth transitions. I also avoided cutting audio in the middle of waveforms, instead cutting at zero-crossing points where the waveform crosses the horizontal axis to minimize abrupt changes that can cause clicks.
+### **Question 3**
+```
+What are your conclusions about the analysis about the different spectrums and spectrograms in the first section (Filters)?
+```
+
+**Answer**: The analysis of different spectrums and spectrograms revealed how various filters affect the frequency content of audio signals. Low-pass filters effectively attenuate high frequencies, while high-pass filters do the opposite. Band-pass filters allow a specific range of frequencies to pass through while attenuating others. The spectrograms provided a visual representation of these changes over time, making it easier to understand how each filter modifies the audio signal.
+### **Question 4**
+```
+Did you have problems understanding any of the effects in the second section of the exercise (Other audio effects)?
+```
+**Answer**: I initially had some difficulty understanding how the equalization effect worked, particularly in terms of adjusting specific frequency bands. However, after experimenting with the effect and observing the changes in the spectrogram, I gained a better understanding of how boosting or cutting certain frequencies can shape the overall sound. The other effects, such as reverb and delay, were more intuitive and easier to grasp.
+### **Question 5**
+```
+In the reverb exercise, feel free to upload a picture of your completed sketch running in the browser to share with the class.
+```
+**Answer**:
+### **Question 6**
+```
+In the filter exercise, what are your conclusions about the analysis about the different spectrums and spectrograms of both sounds? Did you get similar results in Audacity?
+```
+
+---
+
+## **Summary**
+### **Question 1**
+```
+Did you find any of the exercises difficult to understand?
+```
+**Answer:** I found the convolution exercise a bit challenging at first, especially understanding how the impulse response affects the original signal. However, after working through the examples and implementing the convolve function in Python, I was able to grasp the concept better. The practical application of convolution in audio processing helped solidify my understanding.
+### **Question 2**
+```
+Did you find any of the results interesting?
+```
+**Answer:**
+Yes, I found the results of applying reverb and convolution particularly interesting. Hearing how the impulse response of a space can dramatically change the character of a sound was fascinating. It highlighted the importance of acoustics in audio production and how digital processing can simulate real-world environments effectively.
